@@ -3,97 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EchoVault - Discover your hidden life patterns without login. Reflect, discover, grow.">
     <title>EchoVault - Discover Your Hidden Life Patterns</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Premium typography pairing -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <h1 class="header-title">EchoVault</h1>
-            <p class="header-tagline">Discover your hidden life patterns — no login required</p>
-        </header>
+    <!-- Skip to main content (accessibility) -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
 
-        <!-- Authentication Section (Optional) -->
-        <div class="auth-section">
-            <button class="auth-btn auth-btn--login" data-action="login">Sign In</button>
-            <span class="auth-divider">or</span>
-            <button class="auth-btn auth-btn--signup" data-action="signup">Create Account</button>
+    <!-- Animated gradient background element -->
+    <div class="gradient-bg"></div>
+
+    <!-- Header Section: Premium entrance animation -->
+    <header class="header" role="banner">
+        <div class="header-wrapper">
+            <div class="header-content">
+                <h1 class="header-title">
+                    <span class="title-char">E</span>
+                    <span class="title-char">c</span>
+                    <span class="title-char">h</span>
+                    <span class="title-char">o</span>
+                    <span class="title-char">V</span>
+                    <span class="title-char">a</span>
+                    <span class="title-char">u</span>
+                    <span class="title-char">l</span>
+                    <span class="title-char">t</span>
+                </h1>
+                <p class="header-tagline">Discover your hidden life patterns — no login required</p>
+            </div>
         </div>
+    </header>
 
-        <!-- Main Form Section -->
-        <main class="main-content">
-            <section class="prompt-section">
-                <h2 class="section-title">Today's Reflections</h2>
-                <p class="section-subtitle">Take a moment to capture what matters</p>
-
-                <form id="reflection-form" class="reflection-form">
-                    <!-- First Prompt -->
+    <!-- Main Content -->
+    <main id="main-content" class="main-wrapper">
+        <div class="container">
+            <!-- Reflection Form Section: Smooth entrance -->
+            <section class="form-section">
+                <form id="reflection-form" class="reflection-form" role="form">
+                    <!-- Form Input Group 1 -->
                     <div class="form-group">
                         <label for="meaningful-moment" class="form-label">
-                            What was your most meaningful moment today?
+                            <span class="label-text">What was your most meaningful moment today?</span>
+                            <span class="label-accent"></span>
                         </label>
-                        <textarea 
-                            id="meaningful-moment" 
-                            class="form-textarea" 
-                            placeholder="Share your thoughts..." 
-                            rows="4"
-                            required>
-                        </textarea>
+                        <div class="textarea-wrapper">
+                            <textarea 
+                                id="meaningful-moment" 
+                                class="form-textarea"
+                                placeholder="Share a moment that mattered to you..."
+                                rows="5"
+                                required
+                                aria-required="true"
+                            ></textarea>
+                            <div class="textarea-focus-ring"></div>
+                        </div>
                     </div>
 
-                    <!-- Second Prompt -->
+                    <!-- Form Input Group 2 -->
                     <div class="form-group">
                         <label for="dominant-feeling" class="form-label">
-                            What feeling dominated your day?
+                            <span class="label-text">What feeling dominated your day?</span>
+                            <span class="label-accent"></span>
                         </label>
-                        <textarea 
-                            id="dominant-feeling" 
-                            class="form-textarea" 
-                            placeholder="Describe the feeling..." 
-                            rows="4"
-                            required>
-                        </textarea>
+                        <div class="textarea-wrapper">
+                            <textarea 
+                                id="dominant-feeling" 
+                                class="form-textarea"
+                                placeholder="Describe the emotion or mood that stood out..."
+                                rows="5"
+                                required
+                                aria-required="true"
+                            ></textarea>
+                            <div class="textarea-focus-ring"></div>
+                        </div>
                     </div>
 
-                    <!-- Submit Button -->
-                    <button type="submit" class="submit-btn">Generate Your Insight</button>
+                    <!-- Submit Button with premium interactions -->
+                    <div class="button-wrapper">
+                        <button 
+                            type="submit" 
+                            id="generate-btn" 
+                            class="btn btn-primary"
+                            aria-label="Generate your daily insight"
+                        >
+                            <span class="btn-text">Generate Your Insight</span>
+                            <span class="btn-glow"></span>
+                            <span class="btn-ripple"></span>
+                        </button>
+                    </div>
                 </form>
             </section>
 
-            <!-- Insight Card Section -->
-            <section class="insight-section" id="insight-container" style="display: none;">
-                <h2 class="section-title">Your Daily Insight</h2>
-                
-                <div class="insight-card" id="insight-card">
-                    <div class="insight-header">
-                        <span class="insight-date" id="insight-date"></span>
-                    </div>
+            <!-- Insight Display Section: Animated reveal -->
+            <section class="insight-section" id="insight-section">
+                <div class="insight-card" id="insight-card" role="article" aria-live="polite" aria-label="Generated insight">
+                    <div class="insight-background"></div>
                     <div class="insight-content">
-                        <h3 class="insight-subtitle">Meaningful Moment</h3>
-                        <p class="insight-text" id="insight-meaningful"></p>
-                        
-                        <h3 class="insight-subtitle">Dominant Feeling</h3>
-                        <p class="insight-text" id="insight-feeling"></p>
+                        <div class="insight-badge">
+                            <span id="sentiment-indicator"></span>
+                        </div>
+                        <h2 class="insight-title">Your Insight</h2>
+                        <p class="insight-text" id="insight-text"></p>
+                        <div class="insight-meta">
+                            <time class="insight-timestamp" id="insight-timestamp" datetime=""></time>
+                        </div>
                     </div>
-                    <div class="insight-footer">
-                        <p class="insight-reflection" id="insight-reflection"></p>
-                    </div>
+                    <div class="insight-border"></div>
                 </div>
-
-                <button class="action-btn action-btn--new" id="new-reflection-btn">Start New Reflection</button>
             </section>
-        </main>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p class="footer-text">&copy; 2026 EchoVault. Crafted with intention.</p>
-        </footer>
-    </div>
+            <!-- Supabase Authentication Placeholder (commented for future use) -->
+            <!-- 
+            <section class="auth-section" id="auth-section">
+                <div class="auth-content">
+                    <h2>Sync Across Devices</h2>
+                    <p>Save your reflections to the cloud with Supabase</p>
+                    <button 
+                        id="supabase-login-btn" 
+                        class="btn btn-secondary"
+                        aria-label="Sign in with Supabase to sync reflections"
+                    >
+                        <span class="btn-text">Sign In with Supabase</span>
+                    </button>
+                </div>
+            </section>
+            -->
+        </div>
+    </main>
 
-    <script src="script.js"></script>
+    <!-- Footer Section -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2024 EchoVault. <span class="footer-tagline">Reflect freely, discover silently.</span></p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="script.js" defer></script>
 </body>
 </html>
