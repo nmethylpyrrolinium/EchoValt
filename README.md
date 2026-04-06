@@ -1,32 +1,50 @@
-# EchoValt
-EchoVault is a login-based personal pattern engine that helps users discover the hidden rhythms, triggers, and changes shaping their daily life.
-Tagline: Discover the hidden rhythms shaping your life
-Overview:
-EchoVault is a login-based app that turns your daily micro check-ins into a living map of your behavior and patterns. More than a diary or a quiz, it helps you discover triggers, energy flows, and recurring decisions.
-Features:
-Daily micro check-ins (adaptive, short, reflective)
-Login & restore past entries
-Pattern discovery engine
-Timeline and insight reports
-Optional: graphs, streaks, AI insights
-Why EchoVault?
-Most “self-help” apps track generic moods or habits. EchoVault tracks you personally, noticing subtle patterns you never saw. The first time you open it, you’ll say: “Wow… this is me.”
-Demo:
-[Insert GIF/Screen Recording showing first-time dashboard and pattern insight]
-Tech Stack (example):
-Frontend: React.js / Next.js / Tailwind CSS
-Backend: Node.js + Express + MongoDB or Firebase
-Auth: JWT or Firebase Auth
-AI Engine (optional): OpenAI / local ML model for pattern recognition
-Visualization: Chart.js / D3.js
-Getting Started:
-Clone the repo
-Install dependencies (npm install)
-Setup .env for database & API keys
-Run server (npm run dev)
-Future Roadmap:
-Add gamification & streaks
-Export insights to PDF
-AI-generated personalized coaching
-Mobile-friendly responsive UI
-License: MIT
+# EchoVault — Personal Pattern Engine
+![GitHub stars](https://img.shields.io/github/stars/yourusername/echovault?style=social)
+![GitHub forks](https://img.shields.io/github/forks/yourusername/echovault?style=social)
+![GitHub license](https://img.shields.io/github/license/yourusername/echovault)
+
+**Discover the hidden rhythms shaping your life.**
+
+---
+
+## Overview
+EchoVault is a login-based personal pattern engine that transforms tiny daily check-ins into a living map of your behavior, energy, and decisions. Unlike generic journaling or quizzes, EchoVault uncovers patterns and trends in your life you didn’t even know existed.
+
+---
+
+## Features
+- **Daily Micro Check-ins:** Answer 2–3 adaptive prompts each day.
+- **Persistent User Accounts:** Log in and restore all past entries securely.
+- **Pattern Discovery Engine:** Detect recurring triggers, energy highs/lows, decision habits, and social patterns.
+- **Timeline & Highlights:** Visualize your behavior history over days, weeks, or months.
+- **Insight Cards:** Weekly reports summarizing your life patterns in a simple, readable format.
+- **Optional Extras:** Graphs, streak tracking, AI-generated reflections, and shareable reports.
+
+---
+
+## Why EchoVault?
+Most self-help apps track generic habits or moods. EchoVault is **personal, adaptive, and insight-driven**. It helps you discover the subtle patterns shaping your decisions, energy, and behavior — a true reflection of your mind.
+
+> “Your stress spikes after unclear plans and unfinished tasks.”  
+> — First-time insight example from EchoVault
+
+---
+
+## Demo
+[Live Demo](#) | ![GIF](path-to-gif-or-screenshot.gif)
+
+---
+
+## Tech Stack
+- **Frontend:** React.js / Next.js / Tailwind CSS  
+- **Backend:** Node.js + Express + MongoDB (or Firebase)  
+- **Authentication:** JWT or Firebase Auth  
+- **Visualizations:** Chart.js / D3.js  
+- **Optional AI Engine:** OpenAI API for pattern insights  
+
+---
+
+## Getting Started
+1. Clone the repo:
+```bash
+git clone https://github.com/nmethylpyrrolinium/echovault.git
