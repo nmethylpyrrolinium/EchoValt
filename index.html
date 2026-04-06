@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoVault - Discover Your Hidden Life Patterns</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="header-title">EchoVault</h1>
+            <p class="header-tagline">Discover your hidden life patterns — no login required</p>
+        </header>
+
+        <!-- Authentication Section (Optional) -->
+        <div class="auth-section">
+            <button class="auth-btn auth-btn--login" data-action="login">Sign In</button>
+            <span class="auth-divider">or</span>
+            <button class="auth-btn auth-btn--signup" data-action="signup">Create Account</button>
+        </div>
+
+        <!-- Main Form Section -->
+        <main class="main-content">
+            <section class="prompt-section">
+                <h2 class="section-title">Today's Reflections</h2>
+                <p class="section-subtitle">Take a moment to capture what matters</p>
+
+                <form id="reflection-form" class="reflection-form">
+                    <!-- First Prompt -->
+                    <div class="form-group">
+                        <label for="meaningful-moment" class="form-label">
+                            What was your most meaningful moment today?
+                        </label>
+                        <textarea 
+                            id="meaningful-moment" 
+                            class="form-textarea" 
+                            placeholder="Share your thoughts..." 
+                            rows="4"
+                            required>
+                        </textarea>
+                    </div>
+
+                    <!-- Second Prompt -->
+                    <div class="form-group">
+                        <label for="dominant-feeling" class="form-label">
+                            What feeling dominated your day?
+                        </label>
+                        <textarea 
+                            id="dominant-feeling" 
+                            class="form-textarea" 
+                            placeholder="Describe the feeling..." 
+                            rows="4"
+                            required>
+                        </textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Generate Your Insight</button>
+                </form>
+            </section>
+
+            <!-- Insight Card Section -->
+            <section class="insight-section" id="insight-container" style="display: none;">
+                <h2 class="section-title">Your Daily Insight</h2>
+                
+                <div class="insight-card" id="insight-card">
+                    <div class="insight-header">
+                        <span class="insight-date" id="insight-date"></span>
+                    </div>
+                    <div class="insight-content">
+                        <h3 class="insight-subtitle">Meaningful Moment</h3>
+                        <p class="insight-text" id="insight-meaningful"></p>
+                        
+                        <h3 class="insight-subtitle">Dominant Feeling</h3>
+                        <p class="insight-text" id="insight-feeling"></p>
+                    </div>
+                    <div class="insight-footer">
+                        <p class="insight-reflection" id="insight-reflection"></p>
+                    </div>
+                </div>
+
+                <button class="action-btn action-btn--new" id="new-reflection-btn">Start New Reflection</button>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">&copy; 2026 EchoVault. Crafted with intention.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
