@@ -1,0 +1,49 @@
+.container {
+    background-color: #F7F7F7;
+    color: #2A2A2A;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+input, textarea {
+    border: 1px solid #6A8CAF;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+    transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+    border-color: #4C6A8C;
+    outline: none;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #6A8CAF;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #E7F0F7;
+}
+
+.insight-card {
+    border: 1px solid #6A8CAF;
+    background-color: rgba(106, 140, 175, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
