@@ -5,7 +5,7 @@
 ========================================================= */
 
 // ---- CONFIG ----
-const AI_ENDPOINT = "/.netlify/functions/ai"; 
+const AI_ENDPOINT = "https://phfwaxuyauuyskzruqbk.supabase.co/functions/v1/ai";
 // Or:
 // const AI_ENDPOINT = "https://<your-supabase>.supabase.co/functions/v1/ai";
 
