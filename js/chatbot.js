@@ -6,7 +6,7 @@
 ========================================================= */
 
 // ---- CONFIG ----
-const CHAT_AI_ENDPOINT = "/.netlify/functions/ai";
+const CHAT_AI_ENDPOINT = "https://phfwaxuyauuyskzruqbk.supabase.co/functions/v1/ai";
 
 /* =========================================================
    Alam AI Personality (system prompt)
